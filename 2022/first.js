@@ -32,4 +32,5 @@ var indexes = my_function(arr)
 var newIndexes = [...new Set(indexes)]
 var numberArray = spliByIndex(newIndexes)
 var soucetSum = numberArray.map(arr => arr.reduce((sum,item) => sum += item, 0))
-console.log(soucetSum.reduce((a,b,i) => a[0] < b ? [b,i] : a, [Number.MIN_VALUE,-1]))
+let highestToLowest = soucetSum.sort((a, b) => b-a);
+console.log(highestToLowest[0]+highestToLowest[2]+highestToLowest[1])
