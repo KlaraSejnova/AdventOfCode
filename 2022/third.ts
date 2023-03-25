@@ -82,7 +82,6 @@ while (group.length > 1){
     arrItem.push(sameItem)
     group.splice(0,3)
 }
-// console.log(arrItem)
 function findCommonElements3(arr1: string[], arr2: string[]): string {
   return arr1.filter((element) => arr2.includes(element))[0];
 }
@@ -94,8 +93,8 @@ for (var j: number = 0; j < batohy.length; j++)
     }
   }
 
-  const indexes2: number[] = [];
-for (var j: number = 0; j < batohy.length; j++)
+const indexes2: number[] = [];
+for (var j: number = 0; j < arrItem.length; j++)
   for (var i: number = 0; i < smallLetters.length; i++) {
     if (arrItem[j] == smallLetters[i]) {
       indexes2.push(i + 1);
